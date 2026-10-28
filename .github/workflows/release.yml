@@ -1,0 +1,29 @@
+# Сборка релиза из частей: файлы больше 100 МБ нельзя хранить в репозитории целиком,
+# поэтому сборка лежит частями в dist/<версия>/, а этот сценарий склеивает их,
+# проверяет SHA-256 и публикует один zip в разделе «Releases».
+name: release
+on:
+  push:
+    branches: [main]
+    paths: [latest.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Собрать и опубликовать
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VER=$(jq -r .version latest.json)
+          FILE=$(jq -r .mac_arm64.file latest.json)
+          SHA=$(jq -r .mac_arm64.sha256 latest.json)
+          if gh release view "v$VER" >/dev/null 2>&1; then echo "v$VER уже опубликован"; exit 0; fi
+          jq -r '.mac_arm64.parts[]' latest.json | xargs cat > "$FILE"
+          echo "$SHA  $FILE" | sha256sum -c -
+          jq -r .notes latest.json > notes.txt
+          printf '\n\nSHA-256: %s\n' "$SHA" >> notes.txt
+          gh release create "v$VER" "$FILE" --title "HOP HEY AI LAB $VER" --notes-file notes.txt --latest

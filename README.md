@@ -1,1 +1,9 @@
-# hophey-ai-lab-releases
+# HOP HEY AI LAB — выпуски
+
+Готовые сборки программы HOP HEY AI LAB (macOS, Apple Silicon).
+
+- **Скачать:** раздел [Releases](../../releases/latest) — файл `HOP-HEY-AI-LAB-<версия>-mac-arm64.zip`.
+- `latest.json` — описание последней версии (по нему программа проверяет обновления).
+- `dist/<версия>/` — сборка частями (GitHub не хранит в репозитории файлы больше 100 МБ); сценарий `.github/workflows/release.yml` склеивает части, проверяет SHA-256 и публикует релиз.
+
+Данных Hop Hey, цен, баз и ключей API здесь нет — только программа.
