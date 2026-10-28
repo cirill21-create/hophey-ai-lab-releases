@@ -1,16 +1,16 @@
 {
   "app": "HOP HEY AI LAB",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "date": "2026-10-28",
-  "notes": "Проект «Снеки» (цена конкурента на эталонную фасовку Hop Hey), дашборд, «Аналоги», «Что изменилось», контроль источников, резервные копии базы, кнопка «Выйти»; исправлены прокрутка и сопоставление брендов; вино исключено.",
+  "notes": "Исправлено: чёрный экран при переключении «Снеки» → «Разливные напитки» на дашборде. Ошибка отображения одного раздела больше не гасит всю программу.",
   "mac_arm64": {
-    "file": "HOP-HEY-AI-LAB-0.3.0-mac-arm64.zip",
-    "size": 148580505,
-    "sha256": "5b44e5617df397168d22ab0ea3e98f1c5050b73194f4710beb7943b3bbe7a1d1",
+    "file": "HOP-HEY-AI-LAB-0.3.1-mac-arm64.zip",
+    "size": 148580992,
+    "sha256": "229c24cb6c7c6ba2cbd8b5715d4cdb85187d9199220f6144df40f020b2124ad0",
     "parts": [
-      "dist/0.3.0/HOP-HEY-AI-LAB-0.3.0-mac-arm64.zip.part00",
-      "dist/0.3.0/HOP-HEY-AI-LAB-0.3.0-mac-arm64.zip.part01",
-      "dist/0.3.0/HOP-HEY-AI-LAB-0.3.0-mac-arm64.zip.part02"
+      "dist/0.3.1/HOP-HEY-AI-LAB-0.3.1-mac-arm64.zip.part00",
+      "dist/0.3.1/HOP-HEY-AI-LAB-0.3.1-mac-arm64.zip.part01",
+      "dist/0.3.1/HOP-HEY-AI-LAB-0.3.1-mac-arm64.zip.part02"
     ]
   }
 }
