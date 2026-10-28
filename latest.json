@@ -1,16 +1,16 @@
 {
   "app": "HOP HEY AI LAB",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "date": "2026-10-28",
-  "notes": "Исправлено: чёрный экран при переключении «Снеки» → «Разливные напитки» на дашборде. Ошибка отображения одного раздела больше не гасит всю программу.",
+  "notes": "Исправлено: распознавание акционных картинок Маркетопт / Оптовичок снова работает через Apple Vision (ошибка «Не удается установить handler»). Включает исправление 0.3.1 (чёрный экран при переключении проектов).",
   "mac_arm64": {
-    "file": "HOP-HEY-AI-LAB-0.3.1-mac-arm64.zip",
-    "size": 148580992,
-    "sha256": "229c24cb6c7c6ba2cbd8b5715d4cdb85187d9199220f6144df40f020b2124ad0",
+    "file": "HOP-HEY-AI-LAB-0.3.2-mac-arm64.zip",
+    "size": 148581107,
+    "sha256": "7cc7f60c362a743c51ae6486f0204451e071599adcae38d71e6e7dfcc5c2a39c",
     "parts": [
-      "dist/0.3.1/HOP-HEY-AI-LAB-0.3.1-mac-arm64.zip.part00",
-      "dist/0.3.1/HOP-HEY-AI-LAB-0.3.1-mac-arm64.zip.part01",
-      "dist/0.3.1/HOP-HEY-AI-LAB-0.3.1-mac-arm64.zip.part02"
+      "dist/0.3.2/HOP-HEY-AI-LAB-0.3.2-mac-arm64.zip.part00",
+      "dist/0.3.2/HOP-HEY-AI-LAB-0.3.2-mac-arm64.zip.part01",
+      "dist/0.3.2/HOP-HEY-AI-LAB-0.3.2-mac-arm64.zip.part02"
     ]
   }
 }
